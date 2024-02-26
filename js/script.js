@@ -23,11 +23,12 @@ for(i = 0; i < carouselImgs.length; i++){
 
   carousel.innerHTML += `<img class="conteiner-img single none" src="${insImg}"> `
 
-  smallCarousel.innerHTML += `<img class="conteiner-small-img" src="${insImg}"> `
-
+  smallCarousel.innerHTML += `<img class="conteiner-small-img single-active" src="${insImg}"> `
 };
 
 const imgCollection = document.getElementsByClassName('single');
+
+const imgSmall = document.getElementsByClassName('single-active');
 
 const btnUp = document.querySelector('.top');
 
@@ -47,6 +48,10 @@ btnUp.addEventListener('click', function() {
 
   imgCollection[counter].classList.remove('none');
 
+  // imgSmall[counter--].classList.remove('active');
+
+  // imgSmall[counter].classList.add('active');
+
   if(counter === 0){
     btnUp.classList.add('none');
   }
@@ -60,6 +65,10 @@ btnDown.addEventListener('click', function() {
   imgCollection[counter++].classList.add('none');
 
   imgCollection[counter].classList.remove('none');
+
+  // imgSmall[counter++].classList.remove('active');
+
+  // imgSmall[counter].classList.add('active');
 
   if(counter === imgCollection.length - 1 ){
     btnDown.classList.add('none');
