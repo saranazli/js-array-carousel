@@ -19,4 +19,18 @@ for(i = 0; i < carouselImgs.length; i++){
 
   console.log (insImg);
 
+  carousel.innerHTML += `<img class="conteiner-img single none" src="${insImg}"> `
+
 };
+
+const imgCollection = document.getElementsByClassName('single');
+
+const btnUp = document.querySelector('.top');
+
+const btnDown = document.querySelector('.bottom');
+
+console.log(btnDown, btnUp);
+
+let counter = 0 ;
+
+
