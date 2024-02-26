@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#page{
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.conteiner{
+  width: 60%;
+  height: 65%;
+  position: relative;
+}
+
+.carousel{
+  height: 100%;
+}
+
+img.conteiner-img{
+  width: 100%;
+  height: 100%;
+}
+
+button.btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button.btn:hover{
+  cursor: pointer;
+  background-color: rgb(134, 83, 182);
+  color: white;
+}
+
+button.btn.top{
+  top: 15px;
+}
+
+button.btn.bottom{
+  bottom: 15px;
+}
+
+
+
+
