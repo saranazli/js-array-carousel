@@ -11,3 +11,9 @@ creare un array contenente una lista di cinque immagini e creare un carosello de
 6. salvo in una  variabile una collezione di tutte le immagini grazie a get element by class name
 7. salvo in una variabile i bottoni che ho in html 
 8. creo in una variabile un counter che parte da 0. Mi permetterà di far funzionare il carousel
+9. la classe display none precedentemente messa a tutte le img adesso la tolgo alla prima
+10. con addeventlistener metto in moto le funzionalità dei bottoni un e down
+11. ad ogni click i bottoni avranno specifiche condizioni da eseguire
+  - il counter aumenta o diminuisce di uno
+  - quando aumeta o decrementa ( a seconda del bottone up o down) con add rimetto la classe display none
+  - al counter precedente l'aumento o il decremento gli tolgo la classse none

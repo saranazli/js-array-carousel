@@ -33,4 +33,34 @@ console.log(btnDown, btnUp);
 
 let counter = 0 ;
 
+imgCollection[0].classList.remove('none');
 
+btnUp.classList.add('none');
+
+btnUp.addEventListener('click', function() {
+
+  imgCollection[counter--].classList.add('none');
+
+  imgCollection[counter].classList.remove('none');
+
+  if(counter === 0){
+    btnUp.classList.add('none');
+  }
+
+});
+
+btnDown.addEventListener('click', function() {
+
+  imgCollection[counter++].classList.add('none');
+
+  imgCollection[counter].classList.remove('none');
+
+  btnUp.classList.remove('none');
+
+  btnDown.classList.remove('none');
+
+  if(counter = imgCollection.length -1){
+    btnDown.classList.add('none');
+  }
+
+});
