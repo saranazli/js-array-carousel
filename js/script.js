@@ -11,6 +11,8 @@ console.log(carouselImgs);
 
 const carousel = document.querySelector('.carousel');
 
+const smallCarousel = document.querySelector('.small-carousel');
+
 console.log(carousel);
 
 for(i = 0; i < carouselImgs.length; i++){
@@ -20,6 +22,8 @@ for(i = 0; i < carouselImgs.length; i++){
   console.log (insImg);
 
   carousel.innerHTML += `<img class="conteiner-img single none" src="${insImg}"> `
+
+  smallCarousel.innerHTML += `<img class="conteiner-small-img" src="${insImg}"> `
 
 };
 
@@ -62,5 +66,5 @@ btnDown.addEventListener('click', function() {
   }
   
   btnUp.classList.remove('none');
-  
+
 });

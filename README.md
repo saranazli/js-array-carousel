@@ -18,3 +18,4 @@ creare un array contenente una lista di cinque immagini e creare un carosello de
   - quando aumeta o decrementa ( a seconda del bottone up o down) con add rimetto la classe display none
   - al counter precedente l'aumento o il decremento gli tolgo la classse none
   - rendo anche i bottoni visibili o invisibili a seconda delle mie necessità
+  12. per mettere una fila di immagini aggiungo al loop un altro tame plate dove inseriro le immagini in flex collum con dimensioni più piccole
