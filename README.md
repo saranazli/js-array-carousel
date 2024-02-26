@@ -17,3 +17,4 @@ creare un array contenente una lista di cinque immagini e creare un carosello de
   - il counter aumenta o diminuisce di uno
   - quando aumeta o decrementa ( a seconda del bottone up o down) con add rimetto la classe display none
   - al counter precedente l'aumento o il decremento gli tolgo la classse none
+  - rendo anche i bottoni visibili o invisibili a seconda delle mie necessità

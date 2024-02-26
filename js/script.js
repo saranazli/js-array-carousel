@@ -47,6 +47,8 @@ btnUp.addEventListener('click', function() {
     btnUp.classList.add('none');
   }
 
+  btnDown.classList.remove('none');
+
 });
 
 btnDown.addEventListener('click', function() {
@@ -55,12 +57,10 @@ btnDown.addEventListener('click', function() {
 
   imgCollection[counter].classList.remove('none');
 
-  btnUp.classList.remove('none');
-
-  btnDown.classList.remove('none');
-
-  if(counter = imgCollection.length -1){
+  if(counter === imgCollection.length - 1 ){
     btnDown.classList.add('none');
   }
-
+  
+  btnUp.classList.remove('none');
+  
 });
