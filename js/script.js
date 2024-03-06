@@ -39,41 +39,48 @@ console.log(btnDown, btnUp);
 let counter = 0 ;
 
 imgCollection[0].classList.remove('none');
+imgSmall[0].classList.add('active');
 
-btnUp.classList.add('none');
+// btnUp.classList.add('none');
 
 btnUp.addEventListener('click', function() {
 
-  imgCollection[counter--].classList.add('none');
+  
+  imgCollection[counter].classList.add('none');
+  imgSmall[counter].classList.remove('active');
+  
+  counter--
 
   imgCollection[counter].classList.remove('none');
-
-  // imgSmall[counter--].classList.remove('active');
-
-  // imgSmall[counter].classList.add('active');
+  imgSmall[counter].classList.add('active');
 
   if(counter === 0){
     btnUp.classList.add('none');
   }
 
-  btnDown.classList.remove('none');
+  // btnDown.classList.remove('none');
 
 });
 
 btnDown.addEventListener('click', function() {
 
-  imgCollection[counter++].classList.add('none');
+  
+  imgCollection[counter].classList.add('none');
+  imgSmall[counter].classList.remove('active');
+  
+  counter++
+
+  if (counter === carouselImgs.length){
+    counter = 0;
+  }
 
   imgCollection[counter].classList.remove('none');
+  imgSmall[counter].classList.add('active');
 
-  // imgSmall[counter++].classList.remove('active');
-
-  // imgSmall[counter].classList.add('active');
-
-  if(counter === imgCollection.length - 1 ){
-    btnDown.classList.add('none');
-  }
+  // if(counter === imgCollection.length - 1 ){
+  //   btnDown.classList.add('none');
+  // }
   
-  btnUp.classList.remove('none');
+  // btnUp.classList.remove('none');
 
 });
